@@ -3,8 +3,10 @@ at2
 
 Utility to run a program at a specified time, with microsecond level resolution (depending on scheduler :) )
 
-Usage : at2 <base_time> <delta_time_s> cmd [cmd_arg1] [[cmd_arg2]..]
-base_time is designed to take input directly from $(date --rfc-3339=ns), which enables usage like the following
+    Usage : 
+      at2 <base_time> <delta_time_s> cmd [cmd_arg1] [[cmd_arg2]..]
+    
+      # Note: base_time is designed to take input directly from $(date --rfc-3339=ns), which enables usage like the following
 
     base_time = $(date --rfc-3339=ns)
 
